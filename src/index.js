@@ -192,9 +192,9 @@ class WeatherForecast extends React.Component{
                         {
                             data.map((item, index) => ( 
                             <li key={index}> 
-                                Temperature:    {item.main.temp} C      {eS}{eS}
-                                Min:            {item.main.temp_min} C  {eS}{eS}
-                                Max:            {item.main.temp_max} C  {eS}{eS}
+                                Temperature:    {item.main.temp-273.15} C      {eS}{eS}
+                                Min:            {item.main.temp_min-273.15} C  {eS}{eS}
+                                Max:            {item.main.temp_max-273.15} C  {eS}{eS}
                                 Humidity:       {item.main.humidity}   {eS}{eS}
                                 Date:           {item.dt_txt}
                                 <br/><br/><br/>
