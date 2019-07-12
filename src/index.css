@@ -1,0 +1,12 @@
+.col {
+    display: inline-block;
+}
+
+.centered {
+    height: 10vh; /*Magic here*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
